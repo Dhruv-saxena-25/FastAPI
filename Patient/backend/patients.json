@@ -1,0 +1,52 @@
+[
+    {
+        "patientId": "PID-4304",
+        "name": "Emily Bennett",
+        "age": 32,
+        "gender": "Other",
+        "contact": "2377446336",
+        "address": "6048 James River Apt. 434, East Susantown, SD 13791",
+        "medicalHistory": "Future where imagine special some live affect since particular.",
+        "allergies": "letter"
+    },
+    {
+        "patientId": "PID-7149",
+        "name": "Pamela Moran",
+        "age": 22,
+        "gender": "Female",
+        "contact": "5365376686",
+        "address": "PSC 2131, Box 3232, APO AP 10847",
+        "medicalHistory": "Herself similar through high real expect agency sure live.",
+        "allergies": "cause"
+    },
+    {
+        "patientId": "PID-2515",
+        "name": "Patricia Palmer",
+        "age": 33,
+        "gender": "Male",
+        "contact": "1917071923",
+        "address": "26520 Kelley Corners, Lake Jamesbury, CO 61940",
+        "medicalHistory": "Provide under else water energy along choice amount order.",
+        "allergies": "guess"
+    },
+    {
+        "patientId": "PID-8130",
+        "name": "Mr. Timothy Landry Jr.",
+        "age": 50,
+        "gender": "Male",
+        "contact": "6852588895",
+        "address": "31913 Cooper Light Suite 239, Kevinbury, DE 27516",
+        "medicalHistory": "Time marriage dinner prepare wonder member artist another industry.",
+        "allergies": "future"
+    },
+    {
+        "patientId": "PID-9302",
+        "name": "Kimberly Floyd",
+        "age": 65,
+        "gender": "Male",
+        "contact": "2130793882",
+        "address": "559 Curtis Islands, Shelbyhaven, KS 41911",
+        "medicalHistory": "Century beat theory huge lay treat.",
+        "allergies": "often"
+    }
+]

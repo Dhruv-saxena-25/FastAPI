@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Data Input</title>
+    <link rel="stylesheet" href="/static/styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Patient Data Input Form</h2>
+        <form id="patientForm">
+            <label for="patientId">Patient ID:</label>
+            <input type="text" id="patientId" name="patientId" required placeholder="Enter unique patient ID">
+
+            <label for="name">Patient Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter patient name">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required placeholder="Enter patient age">
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required pattern="[0-9]{10}" placeholder="Enter 10-digit number">
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" required placeholder="Enter patient address"></textarea>
+
+            <label for="medicalHistory">Medical History:</label>
+            <textarea id="medicalHistory" name="medicalHistory" rows="4" placeholder="Enter any past medical history"></textarea>
+
+            <label for="allergies">Allergies:</label>
+            <textarea id="allergies" name="allergies" rows="3" placeholder="Enter any known allergies"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <ul id="patientList"></ul>
+        <div id="successMessage" class="hidden">Patient data submitted successfully!</div>
+    </div>
+
+    <script src="/static/scripts/scripts.js"></script>
+</body>
+</html>
