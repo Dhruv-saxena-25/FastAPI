@@ -11,7 +11,7 @@
     - **Short:** Minimize code duplication. Multiple features from each parameter declaration. Fewer bugs.
     - **Robust:** Get production-ready code. With automatic interactive documentation.
 
-# Fast API Wokring:
+# Wokring of Fast API:
 
 ![Alt text](fastapi-1.png "fastapi wokring")
 
@@ -87,13 +87,30 @@ Content-Type: application/json
 - **Response Delivery:** The ASGI server sends the response back to the client.
 
 
+
 # Fast API vs. Flask
 
 ![Alt text](fasiapi-2.png "fastapi wokring")
 
+# **Path Parameters**
 
+- Path parameters are part of the URL path itself. They are used to capture dynamic values from the URL and pass them to your API function.
 
+```bash
+/items/{item_id}
+```
 
-# Path Parameters
+- **Purpose:** Capture parts of the URL as variables.
+- **Data Type:** You can enforce the data type (e.g., int, str, float) by specifying it in the function signature.
+- **Required:** Always required as they are part of the URL.
 
-- Path parameters are dynamic segments of a URL path used to identify a specific resource.
+# **Query Parameters**
+- Query parameters are the key-value pairs in the URL, typically found after the ? in the URL. They are used for optional data, filtering, or additional parameters.
+
+```bash
+/items?name=book&price=20
+```
+
+- **Purpose:** Add optional parameters to your API without changing the URL structure.
+- **Data Type:** Can also have type hints like strings, integers, booleans, lists, etc.
+- **Optional:** Typically optional, and you can define default values.
