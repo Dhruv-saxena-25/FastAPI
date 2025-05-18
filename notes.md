@@ -114,3 +114,13 @@ Content-Type: application/json
 - **Purpose:** Add optional parameters to your API without changing the URL structure.
 - **Data Type:** Can also have type hints like strings, integers, booleans, lists, etc.
 - **Optional:** Typically optional, and you can define default values.
+
+
+### **Key Differences:**
+ 
+| **Path Parameters**              | **Query Parameters**                     |
+| -------------------------------- | ---------------------------------------- |
+| Required in URL                  | Typically optional                       |
+| Part of the URL structure        | After the `?` in the URL                 |
+| Used for resource identification | Used for filtering or additional details |
+| Fixed position in URL            | Can be unordered                         |
