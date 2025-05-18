@@ -3,7 +3,7 @@
 
 # Fast API Wokring:
 
-- ![Alt text](fastiapi-1.png "fastapi wokring")
+- ![Alt text](fastapi-1.png "fastapi wokring")
 
 1) **Web Server**
 - **Purpose:** Acts as the first point of contact for incoming HTTP requests.
