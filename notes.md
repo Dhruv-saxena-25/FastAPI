@@ -1,9 +1,19 @@
 # Fast API: 
 - FastAPI is a high-performance, modern web framework for building APIs with Python, based on standard Python type hints. 
 
+- **The key features are:**
+
+    - **Fast:** Very high performance, on par with NodeJS and Go (thanks to Starlette and Pydantic). One of the fastest Python frameworks available.
+    - **Fast to code:** Increase the speed to develop features by about 200% to 300%. *
+    - **Fewer bugs:** Reduce about 40% of human (developer) induced errors. *
+    - **Intuitive:** Great editor support. Completion everywhere. Less time debugging.
+    - **Easy:** Designed to be easy to use and learn. Less time reading docs.
+    - **Short:** Minimize code duplication. Multiple features from each parameter declaration. Fewer bugs.
+    - **Robust:** Get production-ready code. With automatic interactive documentation.
+
 # Fast API Wokring:
 
-- ![Alt text](fastapi-1.png "fastapi wokring")
+![Alt text](fastapi-1.png "fastapi wokring")
 
 1) **Web Server**
 - **Purpose:** Acts as the first point of contact for incoming HTTP requests.
@@ -31,7 +41,7 @@ Content-Length: 45
 
 - **Why ASGI:** It is the asynchronous evolution of WSGI (Web Server Gateway Interface), designed to handle long-lived connections like WebSockets alongside regular HTTP traffic.
 
-- Flow (from above image):
+- **Flow (from above image):**
 
     * Receives the incoming HTTP request.
 
@@ -42,6 +52,39 @@ Content-Length: 45
     * Collects the response and sends it back to the web server for final delivery to the client.
 
     * **Benefits:** Non-blocking, scalable, and allows background tasks and real-time functionality.
+
+3) **API Code (FastAPI)**
+
+- **Purpose:** Contains the actual logic for processing incoming requests and returning appropriate responses.
+
+- **Key Features:**
+
+    * **Request Parsing:** Extracts JSON data into a Pydantic model (Features).
+
+    * **Processing:** Runs the machine learning model or business logic.
+
+    * **Response:** Returns a JSON response to the client.
+
+- **Response (from above image):**
+
+```bash
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "prediction": 8.3
+}
+```
+
+#### End-to-End Flow in the Image:
+
+- **Client Request:** A client sends a POST request to /predict with JSON payload.
+
+- **ASGI Processing:** ASGI server (like Uvicorn) accepts the request and passes it to the FastAPI application.
+
+- **API Logic:** FastAPI processes the data, runs the prediction, and generates a response.
+
+- **Response Delivery:** The ASGI server sends the response back to the client.
 
 
 # Fast API vs. Flask
