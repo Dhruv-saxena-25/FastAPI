@@ -6,11 +6,11 @@
 ![Alt text](fasiapi-1.png "fastapi wokring")
 
 1) Web Server
-    - **Purpose:** Acts as the first point of contact for incoming HTTP requests.
+- **Purpose:** Acts as the first point of contact for incoming HTTP requests.
 
-    - **Functionality:** Receives client requests (like a browser or another server making an API call) and forwards them to the ASGI application.
+- **Functionality:** Receives client requests (like a browser or another server making an API call) and forwards them to the ASGI application.
 
-    - **Example:** Popular web servers include Nginx, Apache, or Caddy. In Python, this is often handled by Uvicorn or Hypercorn for ASGI applications.
+- **Example:** Popular web servers include Nginx, Apache, or Caddy. In Python, this is often handled by Uvicorn or Hypercorn for ASGI applications.
 
 ```bash
 POST /predict HTTP/1.1
@@ -22,6 +22,8 @@ Content-Length: 45
     "feature1": 5.2,
     "feature2": 3.1
 }
+```
+- **Role in FastAPI:** The web server listens on a port (e.g., 8000) and routes incoming HTTP requests to the ASGI layer.
 
 # Fast API vs. Flask
 
