@@ -3,9 +3,9 @@
 
 # Fast API Wokring:
 
-- ![Alt text](fasiapi-1.png "fastapi wokring")
+- ![Alt text](fastiapi-1.png "fastapi wokring")
 
-1) Web Server:
+1) **Web Server**
 - **Purpose:** Acts as the first point of contact for incoming HTTP requests.
 
 - **Functionality:** Receives client requests (like a browser or another server making an API call) and forwards them to the ASGI application.
@@ -25,23 +25,23 @@ Content-Length: 45
 ```
 - **Role in FastAPI:** The web server listens on a port (e.g., 8000) and routes incoming HTTP requests to the ASGI layer.
 
-2) ASGI (Asynchronous Server Gateway Interface):
+2) **ASGI (Asynchronous Server Gateway Interface)**
 
 - **Purpose:** Bridges the web server and the application code, handling the lifecycle of each request.
 
 - **Why ASGI:** It is the asynchronous evolution of WSGI (Web Server Gateway Interface), designed to handle long-lived connections like WebSockets alongside regular HTTP traffic.
 
-### Flow (from above image):
+- Flow (from above image):
 
-* Receives the incoming HTTP request.
+    * Receives the incoming HTTP request.
 
-* Converts it into a structured format that the FastAPI application can understand.
+    * Converts it into a structured format that the FastAPI application can understand.
 
-* Passes it to the API code for processing.
+    * Passes it to the API code for processing.
 
-* Collects the response and sends it back to the web server for final delivery to the client.
+    * Collects the response and sends it back to the web server for final delivery to the client.
 
-* **Benefits:** Non-blocking, scalable, and allows background tasks and real-time functionality.
+    * **Benefits:** Non-blocking, scalable, and allows background tasks and real-time functionality.
 
 
 # Fast API vs. Flask
