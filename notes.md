@@ -1,7 +1,17 @@
-# Fast API: 
+# **HTTP Methods**
+
+| **Method** | **Action**      | **Idempotent** | **Use Case**               |
+| ------ | ----------- | ---------- | ------------------------- |
+| GET    | Read data   | ✅ Yes      | Fetch data from server    |
+| POST   | Create data | ❌ No       | Submit forms, create item |
+| PUT    | Update data | ✅ Yes      | Full update of a resource |
+| DELETE | Delete data | ✅ Yes      | Remove a resource         |
+
+
+# **Fast API** 
 - FastAPI is a high-performance, modern web framework for building APIs with Python, based on standard Python type hints. 
 
-- **The key features are:**
+- **The key features are**
 
     - **Fast:** Very high performance, on par with NodeJS and Go (thanks to Starlette and Pydantic). One of the fastest Python frameworks available.
     - **Fast to code:** Increase the speed to develop features by about 200% to 300%. *
