@@ -1,3 +1,5 @@
+# **Fast API Notes**
+
 # **HTTP Methods**
 
 | **Method** | **Action**      | **Idempotent** | **Use Case**               |
