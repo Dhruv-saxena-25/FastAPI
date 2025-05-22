@@ -141,6 +141,24 @@ Content-Type: application/json
 
 # **Post Method**
 
+- Used to create or submit data to the server (e.g., creating a user, submitting a form).
+
+## **Key Concepts:**
+
+- 1. **Pydantic Models**
+    * Used to define and validate request body.
+    * Automatically converts and checks types.
+
+- 2. **@app.post("/path/")**
+    * Defines a route that listens for POST requests at /path/.
+
+- 3. **Request Body Handling**
+    * FastAPI reads and parses the JSON body into a Pydantic model.
+
+- 4. **Response**
+    * Returns any serializable object (e.g., dict, list, model).
+    * Can be customized with response_model.
+
 ## **Request body**
 
 - A request body is the portion of an HTTP request that contains data sent by the client to the server. It is typically used in HTTP methods such as POST, or PUT to transmit structured data (e.g., JSON, XML, form-data) for the purpose of creating or updating resources on the server. The server parses the request body to extract the necessary information and perform the intended operation. 
