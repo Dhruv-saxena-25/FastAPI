@@ -92,7 +92,9 @@ Content-Type: application/json
 
 ![Alt text](fasiapi-2.png "fastapi wokring")
 
-# **Path Parameters**
+# **Get Method**
+
+## **Path Parameters**
 
 - Path parameters are part of the URL path itself. They are used to capture dynamic values from the URL and pass them to your API function.
 
@@ -104,7 +106,7 @@ Content-Type: application/json
 - **Data Type:** You can enforce the data type (e.g., int, str, float) by specifying it in the function signature.
 - **Required:** Always required as they are part of the URL.
 
-# **Query Parameters**
+## **Query Parameters**
 - Query parameters are the key-value pairs in the URL, typically found after the ? in the URL. They are used for optional data, filtering, or additional parameters.
 
 ```bash
@@ -124,3 +126,8 @@ Content-Type: application/json
 | Part of the URL structure        | After the `?` in the URL                 |
 | Used for resource identification | Used for filtering or additional details |
 | Fixed position in URL            | Can be unordered                         |
+
+
+
+# **Post Method**
+
