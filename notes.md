@@ -7,6 +7,59 @@
 | PUT    | Update data | ✅ Yes      | Full update of a resource |
 | DELETE | Delete data | ✅ Yes      | Remove a resource         |
 
+# **HTTP Methods Code**
+
+| **Category**      | **Code** | **Meaning**                     | **Description**                                     |
+| ----------------- | -------- | ------------------------------- | --------------------------------------------------- |
+| **Informational** | 100      | Continue                        | Request received, continuing process.               |
+|                   | 101      | Switching Protocols             | Protocol switching requested by client.             |
+|                   | 102      | Processing                      | Server has received and is processing the request.  |
+|                   | 103      | Early Hints                     | Hints user agent to preload resources.              |
+| **Success**       | 200      | OK                              | Request succeeded.                                  |
+|                   | 201      | Created                         | Resource created successfully.                      |
+|                   | 202      | Accepted                        | Request accepted but not yet processed.             |
+|                   | 203      | Non-Authoritative Information   | Returned meta-information not from origin server.   |
+|                   | 204      | No Content                      | Request succeeded but no content to return.         |
+|                   | 205      | Reset Content                   | Request succeeded, client should reset view.        |
+|                   | 206      | Partial Content                 | Partial content returned (used for range requests). |
+| **Redirection**   | 300      | Multiple Choices                | Multiple response options.                          |
+|                   | 301      | Moved Permanently               | Resource moved permanently.                         |
+|                   | 302      | Found                           | Resource temporarily moved.                         |
+|                   | 303      | See Other                       | Response can be found under a different URI.        |
+|                   | 304      | Not Modified                    | Resource not modified since last request.           |
+|                   | 307      | Temporary Redirect              | Resource temporarily moved, same method.            |
+|                   | 308      | Permanent Redirect              | Resource permanently moved, same method.            |
+| **Client Errors** | 400      | Bad Request                     | Malformed request.                                  |
+|                   | 401      | Unauthorized                    | Authentication required.                            |
+|                   | 402      | Payment Required                | Reserved for future use.                            |
+|                   | 403      | Forbidden                       | Server refuses to authorize.                        |
+|                   | 404      | Not Found                       | Resource not found.                                 |
+|                   | 405      | Method Not Allowed              | HTTP method not supported.                          |
+|                   | 406      | Not Acceptable                  | Cannot produce content requested.                   |
+|                   | 407      | Proxy Authentication Required   | Proxy authentication needed.                        |
+|                   | 408      | Request Timeout                 | Request took too long.                              |
+|                   | 409      | Conflict                        | Request conflict with server state.                 |
+|                   | 410      | Gone                            | Resource no longer available.                       |
+|                   | 411      | Length Required                 | Content-Length header required.                     |
+|                   | 412      | Precondition Failed             | Preconditions in headers not met.                   |
+|                   | 413      | Payload Too Large               | Request body too large.                             |
+|                   | 414      | URI Too Long                    | URI too long to process.                            |
+|                   | 415      | Unsupported Media Type          | Media type not supported.                           |
+|                   | 416      | Range Not Satisfiable           | Requested range not satisfiable.                    |
+|                   | 417      | Expectation Failed              | Expectation header not met.                         |
+|                   | 418      | I'm a teapot                    | April Fools' joke from RFC 2324.                    |
+|                   | 422      | Unprocessable Entity            | Semantic errors in request.                         |
+|                   | 425      | Too Early                       | Request sent too early.                             |
+|                   | 426      | Upgrade Required                | Client must switch to a different protocol.         |
+|                   | 429      | Too Many Requests               | Rate limiting applied.                              |
+| **Server Errors** | 500      | Internal Server Error           | Generic server error.                               |
+|                   | 501      | Not Implemented                 | Server lacks functionality to fulfill request.      |
+|                   | 502      | Bad Gateway                     | Invalid response from upstream server.              |
+|                   | 503      | Service Unavailable             | Server is temporarily overloaded or down.           |
+|                   | 504      | Gateway Timeout                 | Upstream server did not respond in time.            |
+|                   | 505      | HTTP Version Not Supported      | Server does not support requested HTTP version.     |
+|                   | 511      | Network Authentication Required | Client must authenticate to gain network access.    |
+
 
 # **Fast API** 
 - FastAPI is a high-performance, modern web framework for building APIs with Python, based on standard Python type hints. 
@@ -86,7 +139,7 @@ Content-Type: application/json
 }
 ```
 
-#### End-to-End Flow in the Image:
+## End-to-End Flow in the Image:
 
 - **Client Request:** A client sends a POST request to /predict with JSON payload.
 
@@ -128,7 +181,7 @@ Content-Type: application/json
 - **Optional:** Typically optional, and you can define default values.
 
 
-### **Key Differences:**
+## **Key Differences:**
  
 | **Path Parameters**              | **Query Parameters**                     |
 | -------------------------------- | ---------------------------------------- |
