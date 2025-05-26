@@ -218,3 +218,25 @@ Content-Type: application/json
 
 - A request body is the portion of an HTTP request that contains data sent by the client to the server. It is typically used in HTTP methods such as POST, or PUT to transmit structured data (e.g., JSON, XML, form-data) for the purpose of creating or updating resources on the server. The server parses the request body to extract the necessary information and perform the intended operation. 
 
+# **Put Method**
+
+- Used to update an existing resource (e.g., a record in a database).
+- @app.put() declares this is a PUT route.
+
+## **Key Concepts**
+
+1) Usually expects complete or partial data in the request body.
+2) Often used with a path parameter to identify which resource to update (e.g., /edit/{id}).
+3) Ideal for modifying fields without replacing the entire object.
+
+
+# **Delete Method**
+
+- Used to remove a resource from the system (e.g., delete a user or record).
+- @app.delete() declares this is a DELETE route.
+
+## **Key Concepts**
+
+1) Often includes a path parameter to identify which resource to delete.
+2) No request body is usually needed.
+3) Should return a success message or appropriate error.
