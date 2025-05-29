@@ -1,3 +1,13 @@
 # Flow Diagram
 
-![alt text](image.png)
+![alt text](flow_diagram.png)
+
+
+# Step-1 Building Machine Learning Model
+
+- Data 
+![alt text](ML\asstes\data.png)
+
+- After doing feature engineering data
+
+![alt text](fe_data.png)
